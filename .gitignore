@@ -1,0 +1,6 @@
+# muntzergeist — private build artifacts (not for the public repo)
+corpus/
+output/
+*.gguf
+__pycache__/
+evals/generations/

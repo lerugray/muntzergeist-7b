@@ -1,0 +1,28 @@
+# muntzergeist — Thomas Müntzer (c.1489–1525) register model. PRIVATE / local-forever.
+# Completion-trained on raw period prose (letters, sermons, manifestos; T1≥55% his own
+# words + T2 filtered biography + ≤10% T3 modern-bridge). The lead-in frame elicits the
+# first-person prophetic voice — the eschaton/hip-priest lesson: plain chat suppresses
+# register; a name-cue lead-in makes the model answer AS Müntzer, not narrate ABOUT him.
+# Period-appropriate framing (no anachronistic "Interviewer:" — a prophet is petitioned).
+# To promote a future retune: ollama create muntzergeist -f this (same frame, new GGUF).
+FROM D:/models/muntzergeist/muntzergeist-qwen2-5-7b-instruct-Q5_K_M.gguf
+
+TEMPLATE """One puts to Thomas Müntzer this matter: {{ .Prompt }}
+
+Thomas Müntzer, a servant of God against the Godless, answers:
+"""
+
+PARAMETER temperature 0.8
+PARAMETER top_p 0.9
+PARAMETER num_predict 300
+PARAMETER stop "One puts to Thomas"
+PARAMETER stop "
+One puts"
+PARAMETER stop "
+Q:"
+PARAMETER stop "
+# "
+PARAMETER stop "
+The above"
+PARAMETER stop "
+Note:"
