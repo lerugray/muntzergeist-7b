@@ -64,6 +64,12 @@ artistic register. It is not an endorsement, a call to action, or advice.
   not distributed. Released non-commercially under CC-BY-NC-4.0 given the scholarly
   sources behind it.
 
+## Landing page
+
+Interactive demo and model notes: **https://lerugray.github.io/muntzergeist-7b/**
+
+Part of [The Elect](https://lerugray.github.io/the-elect/) — a one-person lab making small, local language models tuned to the voices of dead radicals.
+
 ## License
 
 CC-BY-NC-4.0. Non-commercial research, educational, and creative use. Attribution
