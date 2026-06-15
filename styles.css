@@ -22,10 +22,11 @@
   --font-serif:  Georgia, 'Times New Roman', serif;
 
   /* ── Müntzergeist-specific: hotter, fiercer ── */
-  --fire:        #cc1a00;          /* hotter than house red */
-  --fire-bright: #e82400;
+  --fire:        #ff6a4d;          /* hotter than house red */
+  --fire-bright: #ff7a5c;
   --fire-dim:    #993010;  /* was #6b0c00 — lifted; dim fire used as TEXT needs to read */
-  --fire-ember:  #8c2800;
+  --fire-ember:  #cf8260;
+  --fire-cap:    #e0916b;  /* readable dim-fire for caption/tag text */
   --fire-glow:   rgba(204, 26, 0, 0.18);
   --amber:       #d4681a;          /* woodcut amber accent */
   --amber-dim:   #7a3a0e;
@@ -187,7 +188,7 @@ body {
   display: block;
   font-size: 0.78rem;      /* was 0.75rem */
   letter-spacing: 0.12em;  /* was 0.2em */
-  color: var(--fire-dim);  /* now #993010 (lifted) vs old #6b0c00 */
+  color: var(--fire-cap);  /* now #993010 (lifted) vs old #6b0c00 */
   margin-bottom: 0.6rem;
   text-transform: uppercase;
 }
@@ -221,7 +222,7 @@ body {
 }
 
 .pamphlet-ornament {
-  color: var(--fire-dim);  /* now #993010 (lifted) */
+  color: var(--fire-cap);  /* now #993010 (lifted) */
   font-size: 0.75rem;      /* was 0.72rem */
   letter-spacing: 0.15em;  /* was 0.2em */
   white-space: nowrap;
@@ -285,7 +286,7 @@ body {
 .caption-tag {
   font-size: 0.72rem;      /* was 0.6rem — well below minimum */
   letter-spacing: 0.15em;  /* was 0.3em */
-  color: var(--fire-dim);  /* now #993010 (lifted) */
+  color: var(--fire-cap);  /* now #993010 (lifted) */
   text-transform: uppercase;
 }
 
@@ -368,7 +369,7 @@ body {
 .terminal-label {
   font-size: 0.72rem;      /* was 0.6rem */
   letter-spacing: 0.15em;  /* was 0.25em */
-  color: var(--fire-dim);  /* now #993010 (lifted) */
+  color: var(--fire-cap);  /* now #993010 (lifted) */
   text-transform: uppercase;
 }
 
@@ -413,7 +414,7 @@ body {
 
 .sermon-prompt {
   font-size: 0.78rem;      /* was 0.65rem */
-  color: var(--fire-dim);  /* now #993010 (lifted) */
+  color: var(--fire-cap);  /* now #993010 (lifted) */
   letter-spacing: 0.06em;  /* was 0.08em */
   margin-bottom: 1.25rem;
   text-transform: uppercase;
@@ -638,7 +639,7 @@ body {
 .step-num {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--fire-dim);
+  color: var(--fire-cap);
   line-height: 1;
   margin-bottom: 0.6rem;
   letter-spacing: 0.05em;
@@ -747,7 +748,7 @@ body {
 .footer-sigil {
   font-size: 0.72rem;      /* was 0.65rem */
   letter-spacing: 0.2em;   /* was 0.3em */
-  color: var(--fire-dim);  /* now #993010 (lifted) */
+  color: var(--fire-cap);  /* now #993010 (lifted) */
   margin-bottom: 0.85rem;
 }
 
